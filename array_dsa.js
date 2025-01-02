@@ -11,9 +11,14 @@ const arr = [10, 20, 30, 40, 50];
 const target = 30;
 
 const result = linearSearch(arr, target);
-if (result !== -1) {
-  console.log(`Element ${target} found at index ${result}.`);
-} else {
-  console.log(`Element ${target} not found.`);
+console.log(result)
+
+function reverse(arr) {
+  const reversedArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversedArr.push(arr[i]);
+  }
+  return reversedArr;
+  // return arr.reverse()
 }
-console.log("11323")
+// console.log(reverse([9, 8, 7, 6, 2]));
